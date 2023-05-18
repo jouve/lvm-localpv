@@ -32,7 +32,7 @@ on:
 jobs:
   lint:
     # to ignore builds on release
-    if: ${{ (github.event.ref_type != 'tagx') }}
+    if: ${{ (github.event.ref_type != 'gh-actions') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -60,7 +60,7 @@ jobs:
 
   unit-test:
     # to ignore builds on release
-    if: ${{ (github.event.ref_type != 'tagx') }}
+    if: ${{ (github.event.ref_type != 'gh-actions') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
