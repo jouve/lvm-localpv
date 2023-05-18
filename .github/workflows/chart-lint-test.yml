@@ -6,7 +6,6 @@ on:
       - 'deploy/helm/**'
     branches:
       - develop
-      - gh-actions
   pull_request:
     paths:
       - 'deploy/helm/**'
