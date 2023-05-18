@@ -49,6 +49,7 @@ jobs:
         uses: helm/kind-action@v1
         if: steps.list-changed.outputs.changed == 'true'
         with:
+          version: v0.17.0
           config: buildscripts/kind_config.yaml
 
       - name: Run chart-testing (install)
