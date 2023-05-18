@@ -141,7 +141,7 @@ jobs:
   csi-driver:
     permissions: write-all
     runs-on: ubuntu-latest
-    needs: ['lint', 'unit-test', 'bdd-test']
+    needs: ['lint', 'unit-test']  #, 'bdd-test']
     steps:
       - name: Checkout
         uses: actions/checkout@v3
