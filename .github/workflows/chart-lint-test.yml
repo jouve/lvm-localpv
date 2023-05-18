@@ -2,10 +2,11 @@ name: Chart Lint and Test
 
 on:
   push:
-    paths:
-      - 'deploy/helm/**'
+    #paths:
+    #  - 'deploy/helm/**'
     branches:
       - develop
+      - gh-actions
   pull_request:
     paths:
       - 'deploy/helm/**'

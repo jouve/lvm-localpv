@@ -2,10 +2,11 @@ name: Release Charts
 
 on:
   push:
-    paths:
-      - 'deploy/helm/**'
+    #paths:
+    #  - 'deploy/helm/**'
     branches:
       - develop
+      - gh-actions
 
 jobs:
   release:
