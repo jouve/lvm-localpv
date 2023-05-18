@@ -176,9 +176,7 @@ jobs:
           images: |
             ${{ env.IMAGE_ORG }}/lvm-driver
             ghcr.io/${{ env.IMAGE_ORG }}/lvm-driver
-          tag-latest: false
-          tag-custom-only: true
-          tag-custom: |
+          tags: |
             ${{ env.TAG }}
 
       - name: Print Tag info

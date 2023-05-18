@@ -52,9 +52,8 @@ jobs:
             ${{ env.IMAGE_ORG }}/lvm-driver
             quay.io/${{ env.IMAGE_ORG }}/lvm-driver
             ghcr.io/${{ env.IMAGE_ORG }}/lvm-driver
-          tag-latest: true
-          tag-semver: |
-            {{version}}
+          tags: |
+            type=semver,pattern={{version}}
 
       - name: Print Tag info
         run: |
